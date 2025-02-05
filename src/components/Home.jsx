@@ -16,10 +16,10 @@ function Home() {
             <a
               href="/mahesh_resume.pdf"
               download="mahesh_resume.pdf"
-              className="bg-black text-white font-bold py-2 px-4 rounded-md relative inline-block"
+              className="bg-black text-white font-bold py-2 px-4.5 flex-nowrap rounded-md relative inline-block"
             >
               Download Resume
-              <span className="absolute inset-0 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] rounded-md z-10 "></span>
+              <span className="absolute inset-0 shadow-[5px_5px_0px_0px_rgba(0,198,174)] rounded-md z-10 "></span>
             </a>
           </div>
         </div>
