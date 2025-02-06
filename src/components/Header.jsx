@@ -33,14 +33,14 @@ function Header() {
       </button>
       <div className="hidden md:block" id="navbar-default">
         <ul className="text-center lg:text-2xl md:text-xl font-sans font-medium text-white flex gap-x-10">
-          
-            <Link href="#" to="/">
-              home
-            </Link>
-          
-          
-            <Link href="#" to="/about">about</Link>
-          
+          <Link href="#" to="/home">
+            home
+          </Link>
+
+          <Link href="#" to="/about">
+            about
+          </Link>
+
           <li>
             <a href="#">contact us</a>
           </li>
