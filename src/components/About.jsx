@@ -21,6 +21,9 @@ function About() {
             <p>Web Designer</p>
             <p>React Devloper</p>
           </div>
+          <div>
+            <p className="text-white text-wrap font-semibold text-2xl">Hello! I'm a UI/UX designer and Flutter developer. Dive into my portfolio to discover a fusion of elegant design and seamless Flutter development. Welcome to a world where creativity meets functionality!</p>
+          </div>
         </div>
       </section>
     </>
