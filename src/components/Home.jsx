@@ -25,8 +25,8 @@ function Home() {
         </div>
         <div className="basis-1/2 flex-1 flex flex-col  items-end">
           <img
-            className="w-2/2 sm:w-2/3 md:w-3/4 lg:w-3/6 h-auto sm:items-center "
-            src="images/avatar.png"
+            className="w-2/2 sm:w-2/3 md:w-3/4 lg:w-3/6 h-auto sm:items-center rounded-3xl "
+            src="images/maheshprofile.jpg"
             alt=""
           />
         </div>

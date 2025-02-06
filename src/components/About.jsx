@@ -8,7 +8,7 @@ function About() {
       <section className="flex flex-col sm:flex-row gap-8  mt-[70px] p-14 rounded-3xl mx-12 bg-[#106ee8]">
         <div>
           <img
-            className="w-96 lg:w-md md:w-96 sm:w-2xl items-center"
+            className="w-full lg:w-md md:w-96 sm:w-2xl items-center"
             src="images/avatar.png"
             alt=""
           />
@@ -22,7 +22,7 @@ function About() {
             <p>React Devloper</p>
           </div>
           <div>
-            <p className="text-white text-wrap font-semibold text-2xl">Hello! I'm a UI/UX designer and Flutter developer. Dive into my portfolio to discover a fusion of elegant design and seamless Flutter development. Welcome to a world where creativity meets functionality!</p>
+            <p className="text-white text-wrap font-semibold text-md block lg:text-2xl w-full max-w-xl ">Hello! I'm a Front-end Devloper. Dive into my portfolio to discover a fusion of elegant design and seamless development. Welcome to a world where creativity meets functionality!</p>
           </div>
         </div>
       </section>
