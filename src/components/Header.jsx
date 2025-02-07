@@ -33,20 +33,21 @@ function Header() {
       </button>
       <div className="hidden md:block" id="navbar-default">
         <ul className="text-center lg:text-2xl md:text-xl font-sans font-medium text-white flex gap-x-10">
-          <Link href="#" to="/home">
+          <Link href="#" to="/home" className="hover:text-yellow-200">
             home
           </Link>
 
-          <Link href="#" to="/about">
+          <Link href="#" to="/about" className="hover:text-yellow-200">
             about
           </Link>
 
-          <li>
-            <a href="#">contact us</a>
-          </li>
-          <li>
-            <a href="#">team</a>
-          </li>
+          <Link href="#" to="/contact" className="hover:text-yellow-200">
+            project
+          </Link>
+
+          <Link href="#" to="/contact" className="hover:text-yellow-200">
+            contact
+          </Link>
         </ul>
       </div>
     </div>

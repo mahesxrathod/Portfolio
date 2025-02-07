@@ -4,7 +4,6 @@ import Header from "./Header";
 function Home() {
   return (
     <>
-      <Header />
       <div className="flex flex-col sm:flex-row gap-5 items-center mt-[70px] px-12 ">
         <div>
           <div className="font-extrabold lg:text-7xl md:text-6xl text-5xl  text-wrap">
@@ -25,7 +24,7 @@ function Home() {
         </div>
         <div className="basis-1/2 flex-1 flex flex-col  items-end">
           <img
-            className="w-2/2 sm:w-2/3 md:w-3/4 lg:w-3/6 h-auto sm:items-center rounded-3xl "
+            className="w-2/2 sm:w-2/3 md:w-3/4 lg:w-3/7 mt-6 h-auto object-contain sm:items-center rounded-3xl shadow-[7px_7px_8px_3px_rgba(24,24,26)]"
             src="images/maheshprofile.jpg"
             alt=""
           />
