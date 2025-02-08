@@ -4,7 +4,10 @@ import Header from "./Header";
 function Home() {
   return (
     <>
-      <div className="flex flex-col sm:flex-row gap-5 items-center mt-[70px] px-12 ">
+      <div
+        id="home"
+        className="flex flex-col sm:flex-row gap-5 items-center mt-[100px] px-12 "
+      >
         <div>
           <div className="font-extrabold lg:text-7xl md:text-6xl text-5xl  text-wrap">
             <h1 className="pb-3 lg:pb-8">Hello,</h1>
@@ -15,7 +18,7 @@ function Home() {
             <a
               href="/mahesh_resume.pdf"
               download="mahesh_resume.pdf"
-              className="bg-black text-white hover:bg-white hover:text-black text-xl  font-bold py-3 px-5.5 flex-nowrap rounded-md relative inline-block "
+              className=" bg-black text-white hover:bg-white hover:text-black text-xl  font-bold py-3 px-5.5 flex-nowrap rounded-md relative inline-block "
             >
               Download Resume
               <span className="absolute inset-0 shadow-[6px_5px_0px_0px_rgba(0,198,174)] rounded-md z-10 "></span>
