@@ -30,8 +30,10 @@ function Project() {
   return (
     <>
       <div id="project" className="container mx-auto p-6 mt-[70px]">
-        <h2 className="text-5xl font-bold text-center mb-8">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-5xl font-extrabold text-center mb-10">
+          My Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -43,7 +45,7 @@ function Project() {
                 className="w-full h-70 "
               />
               <div className="p-4">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <h3 className="text-xl font-bold">{project.title}</h3>
                 <p className="text-gray-600 text-sm my-2">
                   {project.description}
                 </p>

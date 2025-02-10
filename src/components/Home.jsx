@@ -1,20 +1,19 @@
 import React from "react";
-import Header from "./Header";
 
 function Home() {
   return (
     <>
       <div
         id="home"
-        className="flex flex-col sm:flex-row gap-5 items-center mt-[100px] px-12 "
+        className="flex flex-col sm:flex-row items-center mt-[100px] px-14 "
       >
-        <div>
+        <div className="items-center">
           <div className="font-extrabold lg:text-7xl md:text-6xl text-5xl  text-wrap">
             <h1 className="pb-3 lg:pb-8">Hello,</h1>
             <h1>I'm Mahesh </h1>
           </div>
           <div>
-            <p className="py-4 font-semibold text-xl">Front-end Devloper</p>
+            <p className="py-4 font-semibold text-2xl">Front-end Devloper</p>
             <a
               href="/mahesh_resume.pdf"
               download="mahesh_resume.pdf"
