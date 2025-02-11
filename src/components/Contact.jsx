@@ -1,71 +1,53 @@
-import React, { useState } from 'react'
+import React from "react";
 
-function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
+const ContactForm = () => {
   return (
-    <>
-    <div className="flex items-center justify-center min-h-screen bg-[#23488A]">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-md w-full max-w-md"
-      >
-        <h2 className="text-2xl font-semibold mb-4 text-center">Contact Us</h2>
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-1">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-1">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-1">Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="4"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-    </>
-  )
-}
+    <div id="contact" className="flex justify-center items-center min-h-screen bg-[#23486A] px-4 mt-[70px]">
+      <div className="bg-white shadow-lg rounded-2xl p-10 max-w-2xl w-full">
+        <h2 className="text-4xl font-extrabold mb-2 text-gray-900">
+          Love to hear from you,
+        </h2>
+        <h2 className="text-4xl font-extrabold mb-6 text-gray-900 flex items-center">
+          Get in touch <span className="ml-2">👋</span>
+        </h2>
+        <form className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">Your name</label>
+              <input
+                type="text"
+                placeholder="name"
+                className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black text-lg"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">Your email</label>
+              <input
+                type="email"
+                placeholder="itaxexample@gmail.com"
+                className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black text-lg"
+              />
+            </div>
+          </div>
 
-export default Contact
+          <div>
+            <label className="block text-gray-700 font-medium mb-2">Message</label>
+            <textarea
+              placeholder="write your message here."
+              className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-black h-32 text-lg"
+              spellCheck="true"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-black text-white py-4 rounded-xl text-xl font-semibold hover:bg-gray-800 transition"
+          >
+            Just Send
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default ContactForm;

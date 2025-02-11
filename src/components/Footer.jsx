@@ -3,8 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <section className="text-center mt-[75px]">
-        <div className="text-2xl font-bold mb-6">
+      <section className="mt-[75px]">
+        <div className="text-2xl text-center font-bold mb-6">
           <h2>@MAHESH RATHOD</h2>
         </div>
         <div className="text-2xl font-semibold text-center italic text-wrap w-full max-w-md mx-auto mb-10">
@@ -44,7 +44,10 @@ function Footer() {
           </a>
         </div>
         <div>
-            <h3></h3>
+          <hr className="font-extrabold" />
+        </div>
+        <div className="text-center my-6">
+          <p className="text-md tracking-wide">CopyRight © 2025 <span className="text-gray-700">Mahesh Rathod</span></p>
         </div>
       </section>
     </>
